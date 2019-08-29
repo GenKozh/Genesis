@@ -40,14 +40,15 @@ body {
       position: absolute;
       left: 15px;
       top: 225px;
-      background-color: #fff; }
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
       .aside_bar .aside_overlay_bar .aside_inner_bar h4 {
         font-size: 32px;
         font-weight: bold;
         color: #fc5095;
         position: relative;
         letter-spacing: 0.05em;
-        margin: 110px 60px 15px 60px; }
+        margin: 100px 60px 15px 55px; }
       .aside_bar .aside_overlay_bar .aside_inner_bar p {
         font-size: 24px;
         color: #3b3b3b;
@@ -55,12 +56,12 @@ body {
         font-weight: 600;
         line-height: 1.2;
         letter-spacing: 0.05em;
-        margin: 5px 20px 0 65px; }
+        margin: 5px 20px 0 57px; }
       .aside_bar .aside_overlay_bar .aside_inner_bar h3 {
         font-size: 35px;
         font-weight: bold;
         color: #3b3b3b;
-        margin: 140px 60px 15px 60px; }
+        margin: 155px 60px 15px 60px; }
       .aside_bar .aside_overlay_bar .aside_inner_bar .btn {
         font-size: 38px;
         font-weight: bold;
@@ -73,7 +74,10 @@ body {
         line-height: 75px;
         letter-spacing: 0.075em;
         padding: 0 5px 0 5px;
-        margin: 20px auto 15px 60px; }
+        margin: 20px auto 15px 60px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        .aside_bar .aside_overlay_bar .aside_inner_bar .btn:hover {
+          background-color: #0099cc; }
 
 .outer_circle {
   height: 80px;
@@ -82,15 +86,17 @@ body {
   top: 88px;
   border-radius: 50%;
   background-color: #fc5095;
-  position: absolute; }
+  position: absolute;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .outer_circle .inner_circle {
-    height: 60px;
-    width: 60px;
-    left: 10px;
-    top: 10px;
+    height: 62px;
+    width: 62px;
+    left: 9px;
+    top: 9px;
     border-radius: 50%;
     background-color: #fff;
-    position: absolute; }
+    position: absolute;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     .outer_circle .inner_circle .svg_icon {
       fill: #fc5095; }
 
@@ -124,3 +130,68 @@ body {
   height: 100%;
   right: 0;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(58, 4, 30, 0.6)); }
+
+@media only screen and (max-width: 1399.98px) {
+  .aside_bar {
+    height: 100%;
+    width: 379px; }
+    .aside_bar .aside_overlay_bar {
+      height: 100vh;
+      left: 0px; }
+      .aside_bar .aside_overlay_bar .aside_inner_bar {
+        height: 85%;
+        width: 366px;
+        left: 15px;
+        top: 175px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar h4 {
+          font-size: 24px;
+          margin: 110px 60px 15px 60px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar p {
+          font-size: 16px;
+          margin: 5px 20px 0 65px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar h3 {
+          font-size: 24px;
+          margin: 100px 60px 15px 60px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar .btn {
+          font-size: 28px;
+          height: 60px;
+          width: 205px;
+          border-radius: 20px;
+          line-height: 55px;
+          padding: 0 5px 0 5px;
+          margin: 20px auto 15px 60px; }
+
+  .aside_gradient {
+    width: 308px; } }
+@media only screen and (max-width: 991.98px) {
+  .aside_bar {
+    height: 100%;
+    width: 279px; }
+    .aside_bar .aside_overlay_bar {
+      height: 100vh;
+      left: 0px; }
+      .aside_bar .aside_overlay_bar .aside_inner_bar {
+        height: 85%;
+        width: 266px;
+        left: 15px;
+        top: 225px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar h4 {
+          font-size: 18px;
+          margin: 110px 50px 15px 50px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar p {
+          font-size: 14px;
+          margin: 5px 20px 0 50px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar h3 {
+          font-size: 18px;
+          margin: 70px 50px 15px 50px; }
+        .aside_bar .aside_overlay_bar .aside_inner_bar .btn {
+          font-size: 22px;
+          height: 60px;
+          width: 175px;
+          border-radius: 20px;
+          line-height: 55px;
+          padding: 0 5px 0 5px;
+          margin: 20px auto 15px 50px; }
+
+  .aside_gradient {
+    width: 208px; } }

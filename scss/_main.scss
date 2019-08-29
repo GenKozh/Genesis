@@ -53,6 +53,7 @@ body {
       left: 15px;
       top: 225px;
       background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
       h4 {
         font-size: 32px;
@@ -60,7 +61,7 @@ body {
         color: $frameColor;
         position: relative;
         letter-spacing: 0.05em;
-        margin: 110px 60px 15px 60px;
+        margin: 100px 60px 15px 55px;
       }
       p {
         font-size: 24px;
@@ -69,13 +70,13 @@ body {
         font-weight: 600;
         line-height: 1.2;
         letter-spacing: 0.05em;
-        margin: 5px 20px 0 65px;
+        margin: 5px 20px 0 57px;
       }
       h3 {
         font-size: 35px;
         font-weight: bold;
         color: $darkTextColor;
-        margin: 140px 60px 15px 60px;
+        margin: 155px 60px 15px 60px;
       }
       .btn {
         font-size: 38px;
@@ -90,6 +91,11 @@ body {
         letter-spacing: 0.075em;
         padding: 0 5px 0 5px;
         margin: 20px auto 15px 60px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          
+          &:hover {
+          background-color: #0099cc;
+        }
       }
     }
   }
@@ -104,15 +110,17 @@ body {
   border-radius: 50%;
   background-color: $frameColor;
   position: absolute;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
   .inner_circle {
-    height: 60px;
-    width: 60px;
-    left: 10px;
-    top: 10px;
+    height: 62px;
+    width: 62px;
+    left: 9px;
+    top: 9px;
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       
       .svg_icon {
       fill:$frameColor;
@@ -159,5 +167,97 @@ body {
   background-image: linear-gradient(to right, rgba(0,0,0,0), $gradientToColor)
 }
 
-@media only screen and (max-width: 768px) {}
 
+@media only screen and (max-width: 1399.98px) {
+
+  .aside_bar {
+    height: 100%;
+    width: 379px;
+    
+    .aside_overlay_bar {
+      height: 100vh;
+      left: 0px;
+      
+      .aside_inner_bar {
+        height: 85%;
+        width: 366px;
+        left: 15px;
+        top: 175px;
+
+        h4 {
+          font-size: 24px;
+          margin: 110px 60px 15px 60px;
+        }
+        p {
+          font-size: 16px;
+          margin: 5px 20px 0 65px;
+        }
+        h3 {
+          font-size: 24px;
+          margin: 100px 60px 15px 60px;
+        }
+        .btn {
+          font-size: 28px;
+          height: 60px;
+          width: 205px;
+          border-radius: 20px;
+          line-height: 55px;
+          padding: 0 5px 0 5px;
+          margin: 20px auto 15px 60px;
+            
+        }
+      }
+    }
+  }
+  .aside_gradient {
+    width: 308px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 991.98px) {
+  
+  .aside_bar {
+    height: 100%;
+    width: 279px;
+    
+    .aside_overlay_bar {
+      height: 100vh;
+      left: 0px;
+      
+      .aside_inner_bar {
+        height: 85%;
+        width: 266px;
+        left: 15px;
+        top: 225px;
+
+        h4 {
+          font-size: 18px;
+          margin: 110px 50px 15px 50px;
+        }
+        p {
+          font-size: 14px;
+          margin: 5px 20px 0 50px;
+        }
+        h3 {
+          font-size: 18px;
+          margin: 70px 50px 15px 50px;
+        }
+        .btn {
+          font-size: 22px;
+          height: 60px;
+          width: 175px;
+          border-radius: 20px;
+          line-height: 55px;
+          padding: 0 5px 0 5px;
+          margin: 20px auto 15px 50px;
+            
+        }
+      }
+    }
+  }
+  .aside_gradient {
+    width: 208px;
+  }
+}
