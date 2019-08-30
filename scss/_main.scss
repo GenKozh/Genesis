@@ -1,4 +1,3 @@
-
 // * {
 //    outline: 1px solid red; 
 // }
@@ -6,103 +5,101 @@
 html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 body {
-  box-sizing: border-box;
   min-width: 500px;
+  min-height: 600px;
   user-select: none;
   overflow: hidden;
 }
 
-.page_container {
+.page-container {
   display: flex;
   height: 100%;
 }
 
-.full_page_img {
-  background-image: url('../img/bg_girl_image.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.full-page-img {
+  background: no-repeat center/cover url(../img/bg_girl_image.png);
   height: 100%;
   width: 100%;
   filter: saturate(120%) hue-rotate(-5deg);
   position: relative;
 }
 
-.aside_bar {
+//============= Aside Bar =============//
+
+.aside-bar {
   height: 100%;
-  width: 479px;
+  width: calc(479px + #{$navShift});
   background-color: $frameColor;
   position: relative;
   flex-shrink: 0;
-  
-  .aside_overlay_bar {
-    height: 100vh;
-    background-color: $frameColor;
-    position: absolute;
-    left: 0px;
-    
-    .aside_inner_bar {
-      height: 85%;
-      width: 466px;
-      position: absolute;
-      left: 15px;
-      top: 225px;
-      background-color: #fff;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-      h4 {
-        font-size: 32px;
-        font-weight: bold;
-        color: $frameColor;
-        position: relative;
-        letter-spacing: 0.05em;
-        margin: 100px 60px 15px 55px;
-      }
-      p {
-        font-size: 24px;
-        color: #3b3b3b;
-        text-transform: uppercase;
-        font-weight: 600;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        margin: 5px 20px 0 57px;
-      }
-      h3 {
-        font-size: 35px;
-        font-weight: bold;
-        color: $darkTextColor;
-        margin: 155px 60px 15px 60px;
-      }
-      .btn {
-        font-size: 38px;
-        font-weight: bold;
-        background-color:$frameColor;
-        color: white;
-        text-align: center;
-        height: 80px;
-        width: 275px;
-        border-radius: 20px;
-        line-height: 75px;
-        letter-spacing: 0.075em;
-        padding: 0 5px 0 5px;
-        margin: 20px auto 15px 60px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-          
-          &:hover {
-          background-color: #0099cc;
-        }
-      }
+  .aside-inner-bar {
+    height: 80%;
+    position: relative;
+    left: 13px;
+    top: 224px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  h4 {
+    font: bold 32px 'Open Sans', sans-serif;
+    color: $frameColor;
+    position: relative;
+    letter-spacing: 0.05em;
+    margin: 100px 60px 15px 55px;
+  }
+  p {
+    font: 600 24px/1.2 'Open Sans', sans-serif;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 5px 20px 0 57px;
+  }
+  .flex-space-item {
+    height: 14vh;
+    flex-shrink: 2;
+  }
+  h3 {
+    font: bold 35px 'Open Sans', sans-serif;
+    color: #3b3b3b;
+    margin: 5px 60px 15px 60px;
+  }
+  .btn {
+    font: bold 38px/75px 'Open Sans', sans-serif;
+    background-color:$frameColor;
+    color: white;
+    text-align: center;
+    height: 80px;
+    width: 275px;
+    border-radius: 20px;
+    letter-spacing: 0.075em;
+    padding: 0 5px 0 5px;
+    margin: 20px auto 15px 60px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      
+    &:hover {
+    background-color: #0099cc;
     }
+  }
+  .flex-space-item-bottom {
+    height: 27vh;
+    flex-shrink: 0;
+  }
   }
 }
 
+//============= Heart logo =============//
 
-.outer_circle {
+.outer-circle {
   height: 80px;
   width: 80px;
   left: -48px;
@@ -112,7 +109,7 @@ body {
   position: absolute;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-  .inner_circle {
+  .inner-circle {
     height: 62px;
     width: 62px;
     left: 9px;
@@ -122,13 +119,15 @@ body {
     position: absolute;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       
-      .svg_icon {
-      fill:$frameColor;
+      .svg-icon {
+        fill:$frameColor;
     }
   }
 }
 
-.footer_bar {
+//============= Footer Bar =============//
+
+.footer-bar {
   background-color: rgba(256, 256, 256, 0.74);
   position: absolute;
   display: flex;
@@ -137,127 +136,112 @@ body {
   width: 100%;
   justify-content: space-between;
 
+  .flex-wrap {
+    display: flex;
+    flex: 0 0 81%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flex-spacer-right, 
+  .flex-spacer-left {
+    width: 180px;
+  }
+  
+  a {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.050em;
+    color: #3b3b3b;
+    align-self: center;
 
-    .flex_wrap {
-      display: flex;
-      flex: 0 0 81%;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .flex_spacer_right, .flex_spacer_left {
-      width: 180px;
-    }
-    a {
-      font-size: 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: 0.050em;
-      color: $darkTextColor;
-      align-self: center;
-
-    }
+  }
 }
-.aside_gradient {
+
+.aside-gradient {
   position: absolute;
   width: 508px;
   height: 100%;
-  // left: 935px;
   right: 0;
   background-image: linear-gradient(to right, rgba(0,0,0,0), $gradientToColor)
 }
 
+//============= Adaptive design =============//
 
 @media only screen and (max-width: 1399.98px) {
 
-  .aside_bar {
+  .aside-bar {
     height: 100%;
-    width: 379px;
+    width: calc(379px + #{$navShift});
     
-    .aside_overlay_bar {
-      height: 100vh;
-      left: 0px;
-      
-      .aside_inner_bar {
-        height: 85%;
-        width: 366px;
-        left: 15px;
-        top: 175px;
+    .aside-inner-bar {
+      left: 15px;
+      top: 175px;
 
-        h4 {
-          font-size: 24px;
-          margin: 110px 60px 15px 60px;
-        }
-        p {
-          font-size: 16px;
-          margin: 5px 20px 0 65px;
-        }
-        h3 {
-          font-size: 24px;
-          margin: 100px 60px 15px 60px;
-        }
-        .btn {
-          font-size: 28px;
-          height: 60px;
-          width: 205px;
-          border-radius: 20px;
-          line-height: 55px;
-          padding: 0 5px 0 5px;
-          margin: 20px auto 15px 60px;
-            
-        }
+      h4 {
+        font-size: 24px;
+        margin: 110px 60px 15px 60px;
+      }
+      p {
+        font-size: 16px;
+        margin: 5px 20px 0 65px;
+      }
+      h3 {
+        font-size: 24px;
+        margin: 5px 60px 15px 60px;
+      }
+      .btn {
+        font-size: 28px;
+        height: 60px;
+        width: 205px;
+        border-radius: 20px;
+        line-height: 55px;
+        padding: 0 5px 0 5px;
+        margin: 20px auto 15px 60px;
+          
       }
     }
   }
-  .aside_gradient {
+  .aside-gradient {
     width: 308px;
   }
-  
-
 }
 
 @media only screen and (max-width: 991.98px) {
   
-  .aside_bar {
+  .aside-bar {
     height: 100%;
-    width: 279px;
-    
-    .aside_overlay_bar {
-      height: 100vh;
-      left: 0px;
+    width: calc(279px + #{$navShift});
       
-      .aside_inner_bar {
-        height: 85%;
-        width: 266px;
-        left: 15px;
-        top: 225px;
+    .aside-inner-bar {
+      left: 15px;
+      top: 225px;
 
-        h4 {
-          font-size: 18px;
-          margin: 110px 50px 15px 50px;
-        }
-        p {
-          font-size: 14px;
-          margin: 5px 20px 0 50px;
-        }
-        h3 {
-          font-size: 18px;
-          margin: 70px 50px 15px 50px;
-        }
-        .btn {
-          font-size: 22px;
-          height: 60px;
-          width: 175px;
-          border-radius: 20px;
-          line-height: 55px;
-          padding: 0 5px 0 5px;
-          margin: 20px auto 15px 50px;
-            
-        }
+      h4 {
+        font-size: 18px;
+        margin: 110px 50px 15px 50px;
+      }
+      p {
+        font-size: 14px;
+        margin: 5px 20px 0 50px;
+      }
+      h3 {
+        font-size: 18px;
+        margin: 5px 60px 15px 60px;
+      }
+      .btn {
+        font-size: 22px;
+        height: 60px;
+        width: 175px;
+        border-radius: 20px;
+        line-height: 55px;
+        padding: 0 5px 0 5px;
+        margin: 20px auto 15px 50px;
       }
     }
   }
-  .aside_gradient {
+  .aside-gradient {
     width: 208px;
   }
 }
