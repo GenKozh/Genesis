@@ -45,13 +45,13 @@ body {
     justify-content: space-between; }
     .aside-bar .aside-bar__inner-bar .aside-bar__header4 {
       font: bold 31px/1.2  'Open Sans', sans-serif;
-      color: #fc5095;
+      color: #fcc150;
       position: relative;
       letter-spacing: 0.05em;
       margin: 100px 60px 15px 55px;
       transition: opacity 0.3s ease-out; }
     .aside-bar .aside-bar__inner-bar .aside-bar__header4--view2 {
-      color: #fc5095;
+      color: #fcc150;
       margin: 85px 60px 15px 65px; }
     .aside-bar .aside-bar__inner-bar .aside-bar__paragraph {
       font: 600 24px/1.2 'Open Sans', sans-serif;
@@ -111,7 +111,7 @@ body {
   display: block;
   text-decoration: none;
   font: bold 38px/75px 'Open Sans', sans-serif;
-  background-color: #fc5095;
+  background-color: #fcc150;
   color: white;
   text-align: center;
   height: 80px;
@@ -192,34 +192,34 @@ body {
   opacity: 0; }
 
 .aside-bar--width-current {
-  width: calc(479px + 0px); }
+  width: calc(479px + 370px); }
 
 .aside-bar--width-next {
   width: calc(479px + 370px); }
 
 .aside-bar__outer-circle--color-current,
 .aside-bar--color-current {
-  background-color: #fc5095; }
+  background-color: #fcc150; }
 
 .aside-bar__outer-circle--color-next,
 .aside-bar--color-next {
-  background-color: #fc5095; }
+  background-color: #fcc150; }
 
 .page-container__aside-gradient--color-current {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(88, 28, 28, 0.5)); }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(23, 130, 149, 0.5)); }
 
 .page-container__aside-gradient--color-next {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(88, 28, 28, 0.5)); }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(23, 130, 149, 0.5)); }
 
 .aside-bar__svg-icon--color-current {
-  fill: #fc5095; }
+  fill: #fcc150; }
 
 .aside-bar__svg-icon--color-next {
-  fill: #fc5095; }
+  fill: #fcc150; }
 
 @media only screen and (max-width: 1399.98px) {
   .aside-bar--width-current {
-    width: calc(379px + 0px); }
+    width: calc(379px + 370px); }
 
   .aside-bar--width-next {
     width: calc(379px + 370px); }
@@ -247,7 +247,7 @@ body {
     width: 308px; } }
 @media only screen and (max-width: 991.98px) {
   .aside-bar--width-current {
-    width: calc(279px + 0px); }
+    width: calc(279px + 370px); }
 
   .aside-bar--width-next {
     width: calc(279px + 370px); }
@@ -289,4 +289,4 @@ body {
   background-color: #ffd2bb; }
 
 .aside-bar__container input:checked ~ .aside-bar__middle-btn {
-  background-color: #fc5095; }
+  background-color: #fcc150; }

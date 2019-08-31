@@ -11,11 +11,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
 
-    <!-- FontAwesome JS-->
-    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
-
     <!-- compiled CSS -->  
-    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="../css/style3.css">
 
 </head>
 
@@ -54,12 +51,24 @@
               </svg>
             </div>
           </div><!--//outer_circle-->
-          <h4 class = "aside-bar__header4 aside-bar__header4--visible">LOREM IPSUM</h4>
-          <p class = "aside-bar__paragraph aside-bar__paragraph-visible">Mauris vel nisi as orci placerat semper. Aenean sapien massa.</p>
-          <div class = "aside-bar__flex-space-item"></div>
-          <h3 class = "aside-bar__header3 aside-bar__header3--visible">LOREM IPSUM?</h3>
-          <a href="./views/index_view3.html" class="aside-bar__lower-btn aside-bar__lower-btn--visible">НАЧАТЬ</a>
-          <div class="aside-bar__flex-space-item-bottom"></div>
+          
+          <div id="app">
+            <h4 class = "aside-bar__header4 aside-bar__header4--visible aside-bar__header4--view2">LOREM IPSUM</h4>
+            <p class = "aside-bar__paragraph aside-bar__paragraph-visible"></p>
+            <div class = "aside-bar__flex-space-item aside-bar__flex-space-item--view2">
+              <label class="aside-bar__container">
+                  <input type="radio" name="radio">
+                  <div class="aside-bar__middle-btn aside-bar__middle-btn--man aside-bar__middle-btn--visible aside-bar__middle-btn--view2">Вариант А</div>
+                </label>
+                <label class="aside-bar__container">
+                  <input type="radio" name="radio">
+                  <div class="aside-bar__middle-btn aside-bar__middle-btn--woman aside-bar__middle-btn--visible aside-bar__middle-btn--view2">Вариант Б</div>
+                </label>
+              </div>
+            <div class="aside-bar__lower-btn aside-bar__lower-btn--visible aside-bar__lower-btn--view2">ПРОДОЛЖИТЬ</div>
+            <div class="aside-bar__flex-space-item-bottom aside-bar__flex-space-item-bottom-view2"></div>
+          </div><!--//app-->
+
         </div><!--//aside_inner_bar-->
       </div><!--//aside_bar-->
     </div><!-- //page_container -->

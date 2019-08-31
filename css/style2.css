@@ -78,6 +78,18 @@ body {
       letter-spacing: 0.075em;
       text-align: center;
       transition: opacity 0.3s ease-out, background-color 0.3s ease-out; }
+    .aside-bar .aside-bar__inner-bar .aside-bar__middle-btn--man::before {
+      position: absolute;
+      top: 30px;
+      left: 130px;
+      width: 45px;
+      content: url(../img/man.svg); }
+    .aside-bar .aside-bar__inner-bar .aside-bar__middle-btn--woman::before {
+      position: absolute;
+      top: 30px;
+      left: 130px;
+      width: 45px;
+      content: url(../img/woman.svg); }
     .aside-bar .aside-bar__inner-bar .aside-bar__middle-btn--view2 {
       height: 80px;
       width: 275px;
