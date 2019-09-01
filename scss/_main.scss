@@ -69,10 +69,13 @@ body {
       letter-spacing: 0.05em;
       margin: 100px 60px 15px 55px;
       transition: opacity 0.3s ease-out ;
+      text-transform: uppercase;
     }
     .aside-bar__header4--view2 {
-      color: $frameColor1;
       margin: 85px 60px 15px 65px;
+    }
+    .aside-bar__header4--view3 {
+      margin: 110px 60px 15px 65px;
     }
 
     .aside-bar__paragraph {
@@ -94,8 +97,14 @@ body {
       height: 30%;
       padding: 20px 0 25px 0;
     }
+    .aside-bar__flex-space-item--view3 {
+      padding: 65px 0 25px 5px;
+    }
+
+
     .aside-bar__middle-btn {
       display:block;
+      position: relative;
       font: 600 24px/75px 'Open Sans', sans-serif;
       background-color:white;
       color: #3b3b3b;
@@ -103,26 +112,24 @@ body {
       letter-spacing: 0.075em;
       text-align: center;
       transition: opacity 0.3s ease-out, background-color 0.3s ease-out;
+      
+      svg {
+        position: absolute;
+        top: 20px;
+        left: -20px;
+      }
     }
-
-    .aside-bar__middle-btn--man::before {
-      position: absolute;
-      top: 30px;
-      left: 130px;
-      width: 45px;
-      content: url(../img/man.svg);
-    }
-    .aside-bar__middle-btn--woman::before {
-      position: absolute;
-      top: 30px;
-      left: 130px;
-      width: 45px;
-      content: url(../img/woman.svg);
-
-    }
-
 
     .aside-bar__middle-btn--view2 {
+      height: 80px;
+      width: 275px;
+      border-radius: 10px;
+      padding: 0 50px 0 50px;
+      margin: 10px 50px 10px 60px;
+      
+    }
+    .aside-bar__middle-btn--view3 {
+      font: 600 25px/90px 'Open Sans', sans-serif;
       height: 80px;
       width: 275px;
       border-radius: 10px;
@@ -145,6 +152,11 @@ body {
       }
     .aside-bar__flex-space-item-bottom-view2 {
       flex-shrink: 1;
+      }
+      
+    .aside-bar__flex-space-item-bottom-view3 {
+      height: 12vh;
+      flex-shrink: 0;
       }
       
   }
@@ -251,20 +263,6 @@ body {
 //============= fallout =============//
 
 
-.aside-bar__header4--visible,
-.aside-bar__paragraph--visible,
-.aside-bar__header3--visible,
-.aside-bar__lower-btn--visible {
-  opacity: 1;
-}
-
-.aside-bar__header4--hidden,
-.aside-bar__paragraph--hidden,
-.aside-bar__header3--hidden,
-.aside-bar__lower-btn--hidden {
-  opacity: 0;
-}
-
 .aside-bar--width-current {
   width: calc(479px + #{$navShift1});
 }
@@ -284,7 +282,7 @@ body {
 }
 
 .page-container__aside-gradient--color-current {
-  background-image: linear-gradient(to right, rgba(0,0,0,0), $gradientToColor2)
+  background-image: linear-gradient(to right, rgba(0,0,0,0), $gradientToColor1)
 }
 .page-container__aside-gradient--color-next {
   background-image: linear-gradient(to right, rgba(0,0,0,0), $gradientToColor2)
@@ -297,6 +295,35 @@ body {
 .aside-bar__svg-icon--color-next {
   fill:$frameColor1;
 }
+
+//============= Custom selector =============//
+.aside-bar__container {
+  display: block;
+  position: relative;
+  font-size: 22px;
+}
+
+/* Hide the browser's default radio button */
+.aside-bar__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.aside-bar__container:hover input ~ .aside-bar__middle-btn {
+  background-color: #ffd2bb;
+}
+
+.aside-bar__container input:checked ~ .aside-bar__middle-btn {
+  background-color: $frameColor1;
+  color: white;
+}
+
+.aside-bar__container input:checked ~ .aside-bar__middle-btn svg {
+  fill: white;
+}
+
+
 
 //============= Adaptive design =============//
 
@@ -326,8 +353,35 @@ body {
         font-size: 24px;
         margin: 5px 60px 15px 60px;
       }
+
+      .aside-bar__middle-btn--view2 {
+        font: 600 22px/50px 'Open Sans', sans-serif;
+        height: 50px;
+        width: 200px;
+        padding: 0 50px 0 50px;
+        margin: 10px 50px 10px 60px;
+        
+      }
+      .aside-bar__middle-btn--view3 {
+        font: 600 22px/50px 'Open Sans', sans-serif;
+        height: 50px;
+        width: 200px;
+        padding: 0 50px 0 50px;
+        margin: 10px 50px 10px 60px;
+        
+      }
+
+      .aside-bar__middle-btn {
+        svg {
+          transform: scale(.7, .7);
+          top: 0px;
+          left: -40px;
+        }
+      }
+
+
       .aside-bar__lower-btn {
-        font-size: 28px;
+        font-size: 22px;
         line-height: 55px;
         height: 60px;
         width: 205px;
@@ -383,28 +437,6 @@ body {
   }
 }
 
-//============= Custom selector =============//
-.aside-bar__container {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  font-size: 22px;
-}
-
-/* Hide the browser's default radio button */
-.aside-bar__container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.aside-bar__container:hover input ~ .aside-bar__middle-btn {
-  background-color: #ffd2bb;
-}
-
-.aside-bar__container input:checked ~ .aside-bar__middle-btn {
-  background-color: $frameColor1;
-}
 
 
 

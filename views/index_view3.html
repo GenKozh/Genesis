@@ -13,7 +13,9 @@
 
     <!-- compiled CSS -->  
     <link rel="stylesheet" href="../css/style3.css">
-
+    <!-- Jquery -->  
+    <script src="../src/jquery-3.4.1.min.js"></script>
+ 
 </head>
 
 <body>
@@ -42,36 +44,30 @@
         <div class="aside-bar__inner-bar">
           <div class="aside-bar__outer-circle aside-bar__outer-circle--color-current">
             <div class="aside-bar__inner-circle">
-              <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 60 60" width="37" height="32" transform="translate(12,15)" preserveAspectRatio="none" >
-              <path class="aside-bar__svg-icon aside-bar__svg-icon--color-current" d="M58.4,9.5c-2.3-4.7-4.8-6.5-7.2-7.8c-2.4-1.3-6.5-2.1-10.5-0.5c-5.4,2.1-10.4,10.1-10.4,10.1S25.2,3.3,19.8,1.1
-                c-4-1.6-8.1-0.8-10.5,0.5C7,2.9,4.5,4.8,2.1,9.5c0,0-2.8,5.1-1.5,12.9c0,0,0.4,3.9,3.2,8.2c2.7,4.2,20.7,27,20.7,27s2.2,2.7,5.8,2.7
-                s5.8-3.1,5.8-3.1s18-22.4,20.7-26.6c2.7-4.2,3.2-8.2,3.2-8.2C61.2,14.5,58.4,9.5,58.4,9.5z"/>
-              </svg>
+              <img src="../img/heart.svg" alt="heart" class="svg heart" id = "heart">
             </div>
           </div><!--//outer_circle-->
-          
-          <div id="app">
-            <h4 class = "aside-bar__header4 aside-bar__header4--visible aside-bar__header4--view2">LOREM IPSUM</h4>
+            <h4 class = "aside-bar__header4 aside-bar__header4--view3">Укажите свой пол:</h4>
             <p class = "aside-bar__paragraph aside-bar__paragraph-visible"></p>
-            <div class = "aside-bar__flex-space-item aside-bar__flex-space-item--view2">
+            <div class = "aside-bar__flex-space-item aside-bar__flex-space-item--view3">
               <label class="aside-bar__container">
-                  <input type="radio" name="radio">
-                  <div class="aside-bar__middle-btn aside-bar__middle-btn--man aside-bar__middle-btn--visible aside-bar__middle-btn--view2">Вариант А</div>
-                </label>
-                <label class="aside-bar__container">
-                  <input type="radio" name="radio">
-                  <div class="aside-bar__middle-btn aside-bar__middle-btn--woman aside-bar__middle-btn--visible aside-bar__middle-btn--view2">Вариант Б</div>
-                </label>
-              </div>
-            <div class="aside-bar__lower-btn aside-bar__lower-btn--visible aside-bar__lower-btn--view2">ПРОДОЛЖИТЬ</div>
-            <div class="aside-bar__flex-space-item-bottom aside-bar__flex-space-item-bottom-view2"></div>
-          </div><!--//app-->
-
+                <input type="radio" name="radio">
+                <div class="aside-bar__middle-btn aside-bar__middle-btn--man aside-bar__middle-btn--view3">
+                  <img src="../img/man2.svg" alt="man" class="svg man" id = "man"><span>Вариант А</span>
+                  </div>
+              </label>
+              <label class="aside-bar__container">
+                <input type="radio" name="radio">
+                <div class="aside-bar__middle-btn aside-bar__middle-btn--woman aside-bar__middle-btn--view3">
+                    <img src="../img/woman2.svg" alt="man" class="svg woman" id = "woman"><span>Вариант Б</span>
+                  </div>
+              </label>
+            </div>
+            <div class="aside-bar__lower-btn aside-bar__lower-btn--view2">ПРОДОЛЖИТЬ</div>
+            <div class="aside-bar__flex-space-item-bottom aside-bar__flex-space-item-bottom-view3"></div>
         </div><!--//aside_inner_bar-->
       </div><!--//aside_bar-->
     </div><!-- //page_container -->
-    <script> </script>
+    <script src="../src/app.js"></script>
 </body>
 </html>
