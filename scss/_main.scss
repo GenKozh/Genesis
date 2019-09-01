@@ -52,7 +52,7 @@ body {
 
   
   .aside-bar__inner-bar {
-    height: 80%;
+    height: 100%;
     position: relative;
     left: 13px;
     top: 224px;
@@ -60,7 +60,7 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     
     .aside-bar__header4 {
       font: bold 31px/1.2  'Open Sans', sans-serif;
@@ -77,9 +77,12 @@ body {
     .aside-bar__header4--view3 {
       margin: 110px 60px 15px 65px;
     }
+    .aside-bar__header4--view4 {
+      margin: 90px 60px 20px 65px;
+    }
 
     .aside-bar__paragraph {
-      font: 600 24px/1.2 'Open Sans', sans-serif;
+      font: 600 2.2vh/1.2 'Open Sans', sans-serif;
       color: #3b3b3b;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -100,28 +103,34 @@ body {
     .aside-bar__flex-space-item--view3 {
       padding: 65px 0 25px 5px;
     }
+    .aside-bar__flex-space-item--view4 {
+      padding: 5px 5 5px 5px;
+
+    }
 
 
     .aside-bar__middle-btn {
       display:block;
       position: relative;
-      font: 600 24px/75px 'Open Sans', sans-serif;
+      font: 600 2.2vh/7.4vh 'Open Sans', sans-serif;
       background-color:white;
       color: #3b3b3b;
       border: 1px solid #cccccc; 
       letter-spacing: 0.075em;
-      text-align: center;
+      text-align: right;
       transition: opacity 0.3s ease-out, background-color 0.3s ease-out;
       
       svg {
         position: absolute;
+        fill: #3b3b3b;
+        transform: scale(.9, .9);
         top: 20px;
         left: -20px;
       }
     }
 
     .aside-bar__middle-btn--view2 {
-      height: 80px;
+      height: 7.4vh;
       width: 275px;
       border-radius: 10px;
       padding: 0 50px 0 50px;
@@ -129,14 +138,35 @@ body {
       
     }
     .aside-bar__middle-btn--view3 {
-      font: 600 25px/90px 'Open Sans', sans-serif;
-      height: 80px;
+      font: 600 2.2vh/7.4vh 'Open Sans', sans-serif;
+      height: 7.4vh;
       width: 275px;
       border-radius: 10px;
       padding: 0 50px 0 50px;
       margin: 10px 50px 10px 60px;
       
     }
+    .aside-bar__middle-btn--view4 {
+      display: block;
+      font: 600 2.2vh/7.4vh 'Open Sans', sans-serif;
+      height: 7.4vh;
+      width: 205px;
+      border-radius: 10px;
+      padding: 0 5px 0 5px;
+      margin: 0 8px 0 8px;
+      svg {
+        position: absolute;
+        top: 15px;
+        left: -70px;
+      }
+    }   
+    
+    .aside-bar__middle-btn--man {
+      margin: 0 8px 0 70px;
+    }  
+    // .form-spacer {
+    //   display: inline-block;
+    // }    
 
     .aside-bar__header3 {
       font: bold 35px 'Open Sans', sans-serif;
@@ -169,13 +199,13 @@ body {
   background-color:$frameColor1;
   color: white;
   text-align: center;
-  height: 80px;
+  height: 7.4vh;
   width: 275px;
   border-radius: 20px;
   letter-spacing: 0.075em;
   padding: 0 5px 0 5px;
   margin: 20px auto 15px 60px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: opacity 0.3s ease-out, background-color 0.3s ease-out;
   
   &:hover {
@@ -186,6 +216,18 @@ body {
 .aside-bar__lower-btn--view2 {
   font: bold 28px/75px 'Open Sans', sans-serif;
   margin: 65px 60px 15px 95px;
+
+}
+.aside-bar__lower-btn--view4 {
+  font: bold 28px/75px 'Open Sans', sans-serif;
+  margin: 5px 60px 15px 70px;
+  color: gray;
+  background-color:white;
+  border: 1px solid $frameColor1;
+
+  &:hover {
+    color: white;
+  }
 
 }
 
@@ -298,7 +340,7 @@ body {
 
 //============= Custom selector =============//
 .aside-bar__container {
-  display: block;
+  display: inline-block;
   position: relative;
   font-size: 22px;
 }
@@ -330,20 +372,16 @@ body {
 @media only screen and (max-width: 1399.98px) {
 
   .aside-bar--width-current {
-    width: calc(379px + #{$navShift1});
+    width: calc(279px + #{$navShift1});
   }
-  .aside-bar--width-next {
-    width: calc(379px + #{$navShift2});
-  }
-  
   .aside-bar {  
     .aside-bar__inner-bar {
       left: 15px;
-      top: 175px;
+      top: 10vh;
 
       .aside-bar__header4 {
-        font-size: 24px;
-        margin: 110px 60px 15px 60px;
+        font-size: 18px;
+        margin: 10.18vh 60px 15px 60px;
       }
       .aside-bar__paragraph {
         font-size: 16px;
@@ -379,7 +417,6 @@ body {
         }
       }
 
-
       .aside-bar__lower-btn {
         font-size: 22px;
         line-height: 55px;
@@ -401,18 +438,15 @@ body {
   .aside-bar--width-current {
     width: calc(279px + #{$navShift1});
   }
-  .aside-bar--width-next {
-    width: calc(279px + #{$navShift2});
-  }
-  
+
   .aside-bar {
     .aside-bar__inner-bar {
       left: 15px;
-      top: 225px;
+      top: 10vh;
 
       .aside-bar__header4 {
         font-size: 18px;
-        margin: 110px 50px 15px 50px;
+        margin: 10.18vh 50px 15px 50px;
       }
       .aside-bar__paragraph {
         font-size: 14px;
@@ -438,5 +472,86 @@ body {
 }
 
 
+.aside-bar__form-container a {
+  color: dodgerblue;
+  text-decoration: none;
+}
 
+.form-container__item {
+  display:block;
+  position: relative;
+  font: 600 2.2vh/7.4vh 'Open Sans', sans-serif;
+  background-color:white;
+  color: #3b3b3b;
+  border: 1px solid #cccccc; 
+  letter-spacing: 0.075em;
+  text-align: center;
+  transition: opacity 0.3s ease-out, background-color 0.3s ease-out;
+  height: 7.4vh;
+  width: 350px;
+  border-radius: 10px;
+  padding: 0 50px 0 50px;
+  margin: 0px 50px 10px 70px;
+  
+}
+
+.form-container__label,
+.aside-bar__label {
+  display: block;
+  margin: 0 0 0 70px;
+  color: #3b3b3b;
+  font: 1.6vh 'Open Sans', sans-serif;
+}
+
+
+.form-container__terms-acceptance {
+    display: block;
+    color: #3b3b3b;
+    font: 12px 'Open Sans', sans-serif;
+    text-decoration: none;
+    margin: 10px 50px 10px 70px;
+    & input {
+      display: block;
+      float: left;
+    }
+    & a {
+      text-decoration: none;
+    }
+}
+
+
+  
+  //============= TODO: Custom checkbox =============//
+//   .checkmark {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 25px;
+//     width: 25px;
+//     background-color: #eee;
+//   }
+//   &:hover input ~ .checkmark {
+//     background-color: #ccc;
+//   }
+//   & input:checked ~ .checkmark {
+//     background-color: #2196F3;
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     display: none;
+//   }
+//   & input:checked ~ .checkmark:after {
+//     display: block;
+//   }
+//   & .checkmark:after {
+//   left: 9px;
+//   top: 5px;
+//   width: 5px;
+//   height: 10px;
+//   border: solid white;
+//   border-width: 0 3px 3px 0;
+//   transform: rotate(45deg);
+//   }
+// }
 
