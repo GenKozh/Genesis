@@ -71,18 +71,18 @@
                 </div>
                 </label>
                 <label class = "form-container__label" for="name"><b>Ваше имя:</b></label>
-                <input class = "form-container__item" type="text" placeholder="Введите свое имя" name="name" required>
+                <input class = "form-container__item" type="text" placeholder="Введите свое имя" id="name" onblur="validationForm()" required>
                 <label for="email" class = "form-container__label"><b>Email</b></label>
-                <input class = "form-container__item" type="text" placeholder="Неверный формат email" name="email" required>
+                <input class = "form-container__item" type="text" placeholder="Неверный формат email" id="email" onblur="validationForm()" required>
                 <label for="psw" class = "form-container__label"><b>Придумайте пароль</b></label>
-                <input class = "form-container__item" type="password" placeholder="Придумайте новый пароль" name="psw" required>
+                <input class = "form-container__item" type="password" placeholder="Придумайте новый пароль" id="psw" onblur="validationForm()" required>
                 <label class = "form-container__terms-acceptance">
                   <input type="checkbox" name="terms-acceptance">
                   <span class="checkmark"></span>
                   Регистрируясь, вы подтверждаете, 
                   что вам уже исполнилось </br>18 лет и вы ознакомились с <a href="#">условиями пользования сайтом</a>.
                 </label>
-                <button type="submit" class="aside-bar__lower-btn aside-bar__lower-btn--view4">ПРОДОЛЖИТЬ</button>
+                <button type="submit" class="aside-bar__lower-btn aside-bar__lower-btn--view4" id="submitButton">ПРОДОЛЖИТЬ</button>
             </form>
           </div>
           <div class="aside-bar__flex-space-item-bottom aside-bar__flex-space-item-bottom-view3"></div>
@@ -90,5 +90,6 @@
       </div><!--//aside_bar-->
     </div><!-- //page_container -->
     <script src="../src/app.js"></script>
+    <script src="../src/validation.js"></script>
 </body>
 </html>
