@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Dating app</title>
 
     <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" 
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
 
-    <!-- compiled CSS -->  
-    <link rel="stylesheet" href="../css/style4.css">
-    <!-- Jquery -->  
+    <!-- compiled CSS -->
+    <link rel="stylesheet" href="../css/style4.css" />
+    <!-- Jquery -->
     <script src="../src/jquery-3.4.1.min.js"></script>
- 
-</head>
+  </head>
 
-<body>
-  <div class="full-page-img"></div>
+  <body>
+    <div class="full-page-img"></div>
     <div class="page-container">
       <div class="page-container__full-page-layout">
-        <div class="page-container__aside-gradient page-container__aside-gradient--color-current"></div>
+        <div
+          class="page-container__aside-gradient page-container__aside-gradient--color-current"
+        ></div>
         <footer>
           <div class="footer-bar">
             <div class="footer-bar__flex-spacer-left"></div>
@@ -33,7 +36,9 @@
               <a class="footer-bar__item" href="#">название3</a>
               <a class="footer-bar__item" href="#">название4</a>
               <a class="footer-bar__item" href="#">очень длинное название5</a>
-              <a class="footer-bar__item" href="#">очень очень длинное название6</a>
+              <a class="footer-bar__item" href="#"
+                >очень очень длинное название6</a
+              >
               <a class="footer-bar__item" href="#">длинное название7</a>
               <a class="footer-bar__item" href="#">длинное название8</a>
             </div>
@@ -43,52 +48,129 @@
       </div>
       <div class="aside-bar aside-bar--color-current aside-bar--width-current">
         <div class="aside-bar__inner-bar">
-          <div class="aside-bar__outer-circle aside-bar__outer-circle--color-current">
+          <div
+            class="aside-bar__outer-circle aside-bar__outer-circle--color-current"
+          >
             <div class="aside-bar__inner-circle">
-              <img src="../img/heart.svg" alt="heart" class="svg heart" id = "heart">
+              <img
+                src="../img/heart.svg"
+                alt="heart"
+                class="svg heart"
+                id="heart"
+              />
             </div>
-          </div><!--//outer_circle-->
-          <h4 class = "aside-bar__header4 aside-bar__header4--view4">Lorem ipsum dolor sit amet, 
-              consectetur adipiscing elit,</br>
-              sed do eiusmod</h4>
-          <div class = "aside-bar__flex-space-item aside-bar__flex-space-item--view4">
+          </div>
+          <!--//outer_circle-->
+          <h4 class="aside-bar__header4 aside-bar__header4--view4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do
+            eiusmod
+          </h4>
+          <div
+            class="aside-bar__flex-space-item aside-bar__flex-space-item--view4"
+          >
             <form class="validate" action="/action_page.php">
-                <label class = "aside-bar__label" for="search"><b>Я ищу:</b></label>
-                <label class = "aside-bar__container">
-                  <input type = "radio" name="radio" id = "selector-man" oninput="submitValidation()">
-                  <div class = "aside-bar__middle-btn aside-bar__middle-btn--man aside-bar__middle-btn--view4">
-                    <img src = "../img/man2.svg" alt="man" class="svg man" id = "man">
-                    <!--  -->
-                    <span>Вариант 1<span class = "form-spacer"></span></span>
-                  </div>
-                </label>
-                <label class="aside-bar__container">
-                  <input type="radio" name="radio" id = "selector-woman" oninput="submitValidation()">
-                    <div class="aside-bar__middle-btn aside-bar__middle-btn--woman aside-bar__middle-btn--view4">
-                    <img src="../img/woman2.svg" alt="man" class="svg woman" id = "woman">
-                    <span>Вариант 2<span class = "form-spacer"></span></span>
+              <label class="aside-bar__label" for="search"><b>Я ищу:</b></label>
+              <label class="aside-bar__container">
+                <input
+                  type="radio"
+                  name="radio"
+                  id="selector-man"
+                  oninput="submitValidation()"
+                />
+                <div
+                  class="aside-bar__middle-btn aside-bar__middle-btn--man aside-bar__middle-btn--view4"
+                >
+                  <img
+                    src="../img/man2.svg"
+                    alt="man"
+                    class="svg man"
+                    id="man"
+                  />
+                  <!--  -->
+                  <span>Вариант 1<span class="form-spacer"></span></span>
                 </div>
-                </label>
-                <label class = "form-container__label" for="name"><b>Ваше имя:</b></label>
-                <input class = "form-container__item" type="text" id="name" onfocus = "this.value = '';" onblur="validationFormName()" required>
-                <label for="email" class = "form-container__label"><b>Email</b></label>
-                <input class = "form-container__item" type="text" id="email" autocomplete="username email" onfocus="this.value = '';" onblur="validationFormEmail()" required>
-                <label for="psw" class = "form-container__label"><b>Придумайте пароль</b></label>
-                <input class = "form-container__item" type="password" autocomplete="current-password" id="psw" onfocus="this.value = ''; this.type = 'password';" onblur="validationFormPsw()" required>
-                <label class = "form-container__terms-acceptance">
-                  <input type="checkbox" name="terms-acceptance" id = "checkbox" oninput="submitValidation()"">
-                  <span class="checkmark"></span>
-                  Регистрируясь, вы подтверждаете, 
-                  что вам уже исполнилось </br>18 лет и вы ознакомились с <a href="#">условиями пользования сайтом</a>.
-                </label>
-                <button type="submit" class="aside-bar__lower-btn aside-bar__lower-btn--view4" id="submitButton" >ПРОДОЛЖИТЬ</button>
+              </label>
+              <label class="aside-bar__container">
+                <input
+                  type="radio"
+                  name="radio"
+                  id="selector-woman"
+                  oninput="submitValidation()"
+                />
+                <div
+                  class="aside-bar__middle-btn aside-bar__middle-btn--woman aside-bar__middle-btn--view4"
+                >
+                  <img
+                    src="../img/woman2.svg"
+                    alt="man"
+                    class="svg woman"
+                    id="woman"
+                  />
+                  <span>Вариант 2<span class="form-spacer"></span></span>
+                </div>
+              </label>
+              <label class="form-container__label" for="name"
+                ><b>Ваше имя:</b></label
+              >
+              <input
+                class="form-container__item"
+                type="text"
+                id="name"
+                onfocus="this.value = '';"
+                onblur="validationFormName()"
+                required
+              />
+              <label for="email" class="form-container__label"
+                ><b>Email</b></label
+              >
+              <input
+                class="form-container__item"
+                type="text"
+                id="email"
+                autocomplete="username email"
+                onfocus="this.value = '';"
+                onblur="validationFormEmail()"
+                required
+              />
+              <label for="psw" class="form-container__label"
+                ><b>Придумайте пароль</b></label
+              >
+              <input
+                class="form-container__item"
+                type="password"
+                autocomplete="current-password"
+                id="psw"
+                onfocus="this.value = ''; this.type = 'password';"
+                onblur="validationFormPsw()"
+                required
+              />
+              <label class="form-container__terms-acceptance">
+                <input type="checkbox" name="terms-acceptance" id = "checkbox"
+                oninput="submitValidation()"">
+                <span class="checkmark"></span>
+                Регистрируясь, вы подтверждаете, что вам уже исполнилось <br> 18 лет
+                и вы ознакомились с
+                <a href="#">условиями пользования сайтом</a>.
+              </label>
+              <button
+                type="submit"
+                class="aside-bar__lower-btn aside-bar__lower-btn--view4"
+                id="submitButton"
+              >
+                ПРОДОЛЖИТЬ
+              </button>
             </form>
           </div>
-          <div class="aside-bar__flex-space-item-bottom aside-bar__flex-space-item-bottom-view3"></div>
-        </div><!--//aside_inner_bar-->
-      </div><!--//aside_bar-->
-    </div><!-- //page_container -->
+          <div
+            class="aside-bar__flex-space-item-bottom aside-bar__flex-space-item-bottom-view3"
+          ></div>
+        </div>
+        <!--//aside_inner_bar-->
+      </div>
+      <!--//aside_bar-->
+    </div>
+    <!-- //page_container -->
     <script src="../src/app.js"></script>
     <script src="../src/validation.js"></script>
-</body>
+  </body>
 </html>
