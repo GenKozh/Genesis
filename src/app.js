@@ -4,7 +4,6 @@ jQuery('img.svg').each(function(){
   var $img = jQuery(this);
   var imgID = $img.attr('id');
   var imgURL = $img.attr('src');
-  console.log ($img);
   
   jQuery.get(imgURL, function(data) {
 
@@ -17,7 +16,6 @@ jQuery('img.svg').each(function(){
         $svg = $svg.attr('width', '37');
         $svg = $svg.attr('height', '32');
       }
-      console.log(imgID);
 
       if(imgID == 'man') {
         $svg = $svg.attr('viewBox', '0 0 30 50');

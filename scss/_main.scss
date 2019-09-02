@@ -164,9 +164,11 @@ body {
     .aside-bar__middle-btn--man {
       margin: 0 8px 0 70px;
     }  
-    // .form-spacer {
-    //   display: inline-block;
-    // }    
+    
+    .form-spacer {
+      display: inline-block;
+      width: 20px;
+    }    
 
     .aside-bar__header3 {
       font: bold 35px 'Open Sans', sans-serif;
@@ -216,7 +218,7 @@ body {
 .aside-bar__lower-btn--view2 {
   font: bold 28px/75px 'Open Sans', sans-serif;
   margin: 65px 60px 15px 95px;
-
+  
 }
 .aside-bar__lower-btn--view4 {
   font: bold 28px/75px 'Open Sans', sans-serif;
@@ -224,10 +226,18 @@ body {
   color: gray;
   background-color:white;
   border: 1px solid $frameColor1;
-
+  
   &:hover {
     color: white;
+    background-color: #0099cc6b;
   }
+  
+}
+
+.aside-bar__lower-btn--active {
+  
+  background-color: #0099cc;
+  color: white;
 
 }
 
@@ -480,7 +490,7 @@ body {
 .form-container__item {
   display:block;
   position: relative;
-  font: 600 2.2vh/7.4vh 'Open Sans', sans-serif;
+  font: 2vh/7.4vh 'Open Sans', sans-serif;
   background-color:white;
   color: #3b3b3b;
   border: 1px solid #cccccc; 
@@ -492,6 +502,13 @@ body {
   border-radius: 10px;
   padding: 0 50px 0 50px;
   margin: 0px 50px 10px 70px;
+  
+}
+
+.form-container__item--error {
+  font:  2vh/7.4vh 'Open Sans', sans-serif;
+  color: red;
+  border: 1px solid red; 
   
 }
 

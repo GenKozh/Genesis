@@ -120,6 +120,9 @@ body {
         left: -70px; }
     .aside-bar .aside-bar__inner-bar .aside-bar__middle-btn--man {
       margin: 0 8px 0 70px; }
+    .aside-bar .aside-bar__inner-bar .form-spacer {
+      display: inline-block;
+      width: 20px; }
     .aside-bar .aside-bar__inner-bar .aside-bar__header3 {
       font: bold 35px 'Open Sans', sans-serif;
       color: #3b3b3b;
@@ -162,7 +165,12 @@ body {
   background-color: white;
   border: 1px solid #fcc150; }
   .aside-bar__lower-btn--view4:hover {
-    color: white; }
+    color: white;
+    background-color: #0099cc6b; }
+
+.aside-bar__lower-btn--active {
+  background-color: #0099cc;
+  color: white; }
 
 .aside-bar__outer-circle {
   height: 80px;
@@ -334,7 +342,7 @@ body {
 .form-container__item {
   display: block;
   position: relative;
-  font: 600 2.2vh/7.4vh 'Open Sans', sans-serif;
+  font: 2vh/7.4vh 'Open Sans', sans-serif;
   background-color: white;
   color: #3b3b3b;
   border: 1px solid #cccccc;
@@ -346,6 +354,11 @@ body {
   border-radius: 10px;
   padding: 0 50px 0 50px;
   margin: 0px 50px 10px 70px; }
+
+.form-container__item--error {
+  font: 2vh/7.4vh 'Open Sans', sans-serif;
+  color: red;
+  border: 1px solid red; }
 
 .form-container__label,
 .aside-bar__label {

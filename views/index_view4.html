@@ -52,37 +52,36 @@
               consectetur adipiscing elit,</br>
               sed do eiusmod</h4>
           <div class = "aside-bar__flex-space-item aside-bar__flex-space-item--view4">
-            <form action="/action_page.php">
+            <form class="validate" action="/action_page.php">
                 <label class = "aside-bar__label" for="search"><b>Я ищу:</b></label>
                 <label class = "aside-bar__container">
-                  <input type = "radio" name="radio">
+                  <input type = "radio" name="radio" id = "selector-man" oninput="submitValidation()">
                   <div class = "aside-bar__middle-btn aside-bar__middle-btn--man aside-bar__middle-btn--view4">
                     <img src = "../img/man2.svg" alt="man" class="svg man" id = "man">
-                    <!-- <span class = "form-spacer"></span> -->
-                    <span>Вариант 1&nbsp;</span>
+                    <!--  -->
+                    <span>Вариант 1<span class = "form-spacer"></span></span>
                   </div>
                 </label>
                 <label class="aside-bar__container">
-                  <input type="radio" name="radio">
+                  <input type="radio" name="radio" id = "selector-woman" oninput="submitValidation()">
                     <div class="aside-bar__middle-btn aside-bar__middle-btn--woman aside-bar__middle-btn--view4">
                     <img src="../img/woman2.svg" alt="man" class="svg woman" id = "woman">
-                    <!-- <span class = "form-spacer"></span> -->
-                    <span>Вариант 2&nbsp;</span>
+                    <span>Вариант 2<span class = "form-spacer"></span></span>
                 </div>
                 </label>
                 <label class = "form-container__label" for="name"><b>Ваше имя:</b></label>
-                <input class = "form-container__item" type="text" placeholder="Введите свое имя" id="name" onblur="validationForm()" required>
+                <input class = "form-container__item" type="text" id="name" onfocus = "this.value = '';" onblur="validationFormName()" required>
                 <label for="email" class = "form-container__label"><b>Email</b></label>
-                <input class = "form-container__item" type="text" placeholder="Неверный формат email" id="email" onblur="validationForm()" required>
+                <input class = "form-container__item" type="text" id="email" autocomplete="username email" onfocus="this.value = '';" onblur="validationFormEmail()" required>
                 <label for="psw" class = "form-container__label"><b>Придумайте пароль</b></label>
-                <input class = "form-container__item" type="password" placeholder="Придумайте новый пароль" id="psw" onblur="validationForm()" required>
+                <input class = "form-container__item" type="password" autocomplete="current-password" id="psw" onfocus="this.value = ''; this.type = 'password';" onblur="validationFormPsw()" required>
                 <label class = "form-container__terms-acceptance">
-                  <input type="checkbox" name="terms-acceptance">
+                  <input type="checkbox" name="terms-acceptance" id = "checkbox" oninput="submitValidation()"">
                   <span class="checkmark"></span>
                   Регистрируясь, вы подтверждаете, 
                   что вам уже исполнилось </br>18 лет и вы ознакомились с <a href="#">условиями пользования сайтом</a>.
                 </label>
-                <button type="submit" class="aside-bar__lower-btn aside-bar__lower-btn--view4" id="submitButton">ПРОДОЛЖИТЬ</button>
+                <button type="submit" class="aside-bar__lower-btn aside-bar__lower-btn--view4" id="submitButton" >ПРОДОЛЖИТЬ</button>
             </form>
           </div>
           <div class="aside-bar__flex-space-item-bottom aside-bar__flex-space-item-bottom-view3"></div>
